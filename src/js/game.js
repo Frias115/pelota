@@ -13,7 +13,10 @@
 
       this.ball = this.add.sprite(x, y, 'ball');
       this.ball.anchor.setTo(0.5, 0.5);
+
+      this.ball.body.velocity.setTo(200, 200);
       
+      this.ball.body.collideWorldBounds = true;
     },
 
     update: function () {
