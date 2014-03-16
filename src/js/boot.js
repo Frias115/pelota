@@ -6,10 +6,12 @@
   Boot.prototype = {
     
     preload: function () {
-      this.load.image('preloader', 'assets/preloader.gif');
     },
 
     create: function () {
+      var myCanvas = document.getElementsByTagName("canvas")[0];
+      myCanvas.style.cursor = "none";
+
       this.game.input.maxPointers = 1;
       // this.game.stage.disableVisibilityChange = true;
 

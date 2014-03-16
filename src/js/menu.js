@@ -13,11 +13,14 @@
         , y = this.game.height / 2;
 
 
-      this.titleTxt = this.add.bitmapText(x, y, 'Pelota', {font: '16px minecraftia', align: 'center'});
+      this.titleTxt = this.add.bitmapText(320, 200, 'Bounce', {font: '32px minecraftia', align: 'center'});
       this.titleTxt.anchor.setTo(0.5, 0.5);
 
+      this.controlsText = this.add.bitmapText(320, 300, 'Controls: Move the hand with the mouse', {font: '16px minecraftia', align: 'center'});
+      this.controlsText.anchor.setTo(0.5, 0.5);
+
       y = y + this.titleTxt.height + 5;
-      this.startTxt = this.add.bitmapText(x, y, 'START', {font: '12px minecraftia', align: 'center'});
+      this.startTxt = this.add.bitmapText(320, 400, 'Click to start', {font: '12px minecraftia', align: 'center'});
       this.startTxt.anchor.setTo(0.5, 0.5);
 
       this.input.onDown.add(this.onDown, this);
